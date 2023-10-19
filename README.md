@@ -8,6 +8,9 @@ https://pixabay.com/photos/legs-shoes-couple-leisure-travel-4666061/
 
 https://pixabay.com/photos/sneakers-chucks-sneaker-shoe-2770091/
 
+https://iconscout.com/free-logo/nike-15
+
+https://iconscout.com/free-icon/adidas-14
 
 
 !Font!
