@@ -3,7 +3,11 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+    overflow-x: hidden;
+    
+    
 }
+
 
 body {
  font-family: Arial, Helvetica, sans-serif;
@@ -16,6 +20,10 @@ body {
 
 header, main, footer {
     
+}
+
+h1 {
+    font-size: 25px;
 }
 
 header {
@@ -37,7 +45,6 @@ header nav {
 #burger-meny {
     display: flex;
     margin: 1rem;
-    column-span: all;
 
 }
 
@@ -72,8 +79,9 @@ header nav div {
     justify-content: center;
     text-decoration: none;
     color: #262B54;
-    margin: 1rem;
+    margin: 0rem;
     text-align: center;
+    
 }
 
 
@@ -106,15 +114,7 @@ header nav div {
     text-decoration: none;
 }
 
-.black-btn {
-    display: inline-block;
-    padding: 1rem;
-    text-decoration: none;
-    background-color: black;
-    color: aliceblue;
-    border-radius: 5px;
-    font-weight: 400;
-}
+
 
 main {
     grid-area: main;
@@ -122,17 +122,163 @@ main {
 
 main section img {
     width: 100%;
+    
+    
 }
 
 footer {
     grid-area: footer;
 }
 
-@media only screen and (min-width:600px){
+.reklame {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-top: 5px solid #F4EEFF;
+    border-bottom: 5px solid #F4EEFF;
+    
+}
+
+
+
+.marked {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 10px;
+    
+}
+
+
+.marked h3 {
+    color: #262B54;
+}
+
+.marked p{
+    color:#262B54;
+}
+
+
+.marked-fargebak {
+    background-color: #F4EEFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-bottom: 2.667vw;
+    
+    
+}
+
+#marked-text {
+    text-align: center;
+    color: #262B54;
+    padding-top: 10px;
+}
+
+.marked img {
+    border-radius: 10px;
+    border: 2px solid #262B54;
+    height: 29.333vw;
+    width: 26.667vw;
+    object-fit: cover;
+}
+
+
+#blagjennom {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: #ffffff;
+    margin: 0rem;
+    text-align: center;
+    background-color: #262B54;
+    font-size: 20px;
+    padding-bottom: 5px;
+    
+}
+
+
+.populære-merker {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 10px;
+ 
+ 
+
+}
+
+.populære-merker img {
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    height: 18.667vw;
+    width: 18.667vw;
+}
+
+.pop-fargebak {
+    background-color:#F4EEFF;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin-top: 2.667vw;
+}
+
+#pop-text {
+    text-align: center;
+    color: #262B54;
+    padding-top: 10px;
+}
+
+.sko-type {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1rem;
+    text-align: center;
+}
+
+.sko-type img {
+    max-height: 70px;
+    max-width: 100%;
+    object-fit: cover;
+    
+}
+
+
+
+
+#Sko-type {
+    text-align: center;
+    color: #262B54;
+    padding-top: 10px;
+
+}
+
+#kontakt {
+    margin: 1rem;
+    color: #262B54;
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width:700px){
     .navbar{
         display: flex;
         flex-direction: row;
-        gap: 1rem;
+        gap: 3rem;
         list-style: none;
     }
 
@@ -141,37 +287,42 @@ footer {
         
     }
 
+    .reklame {
+        margin: 2rem;
+        max-width: 100%;
+        max-height: auto;
+        object-fit: contain;
+        border-left: 5px solid #F4EEFF;
+        border-right: 5px solid #F4EEFF;
 
-
-    .flex-section {
-        display: flex;
-        flex-direction: row;
-        
     }
 
-    .flex-section img{
-        width: 40%;
-    }
-
-    .flex-section section {
-        width: 50%;
-        align-self: center;
-    }
-
-    .right img {
-        order: 0;
-    }
 
     #søk input{
-        font-size: 15px;
+        font-size: 20px;
         padding-right: 49.751vw;
         margin-top: 10px;
         background-color: #DCD6F7;
+        
         
     }
 
     .symboler{
         display: none;
     }
+
+
+}
+
+
+@media only screen and (max-width:700px){
+
+    
+
+.marked-mediaQ {
+    display: none;
+}
+
+
 }
 
