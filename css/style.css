@@ -4,8 +4,6 @@
     list-style: none;
     text-decoration: none;
     overflow-x: hidden;
-    
-    
 }
 
 @font-face {
@@ -34,9 +32,6 @@ body {
     grid-template-areas: "header" "main" "footer" ;
 }
 
-header, main, footer {
-    
-}
 
 h1 {
     font-size: 25px;
@@ -172,6 +167,8 @@ footer {
     
 }
 
+
+
 .marked img {
     border-radius: 10px;
     border: 2px solid #262B54;
@@ -226,7 +223,6 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
     margin: 1rem;
     text-align: center;
     margin-top: 10px;
@@ -242,6 +238,34 @@ footer {
     object-fit: cover;
     height: 18.667vw;
     width: 18.667vw;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 1rem;
+}
+
+.populære-merkerQ1 {
+    padding-top: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    text-align: center;
+    margin-top: 10px;
+ 
+ 
+
+}
+
+.populære-merkerQ1 img {
+    border-radius: 10px;
+    max-width: 100%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    height: 18.667vw;
+    width: 18.667vw;
+    max-width: 100px;
+    max-height: 100px;
+    margin: 1rem;
 }
 
 .pop-fargebak {
@@ -261,15 +285,17 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    justify-content: space-between;
     margin: 1rem;
     text-align: center;
+    justify-content: space-evenly;
 }
 
 .sko-type img {
     height: 80px;
     width: 80px;
     object-fit: cover;
+    border-radius: 5px;
+    border: 2px solid #262B54;
     
 }
 
@@ -286,7 +312,12 @@ footer {
 #kontakt {
     margin: 1rem;
     color: #262B54;
-    padding-top: 10px;
+    padding-top: 30px;
+}
+
+
+p {
+    color: #262B54;
 }
 
 
@@ -294,31 +325,45 @@ footer {
 
 
 
-
 @media only screen and (min-width:700px){
-    .navbar{
-        display: flex;
-        flex-direction: row;
-        gap: 3rem;
-        list-style: none;
+
+    article.marked {
+
+        justify-content: space-between;
     }
 
     .marked {
-        display: grid;
+        display: flex;
         grid-row: initial;
         justify-content: center;
         align-items: center;
-        justify-content: space-between;
-        margin: 1rem;
+        margin: 2rem;
         text-align: center;
         margin-top: 10px;
         
     }
 
-    #ham, .fa-sharp {
-        display: ;
+   .marked img {
+        border-radius: 10px;
+        border: 2px solid #262B54;
+        height: 9.986vw;
+        width: 9.986vw;
+        object-fit: cover;
+        justify-content: space-between;
+    }
+    .marked-Q1 {
+        justify-content: space-between;
         
     }
+
+
+    .marked {
+        justify-content: center;
+        
+    }
+
+
+   
 
     .reklame {
         margin: 2rem;
@@ -340,31 +385,16 @@ footer {
         
     }
 
-
-    .marked img {
-        border-radius: 10px;
-        border: 2px solid #262B54;
-        height: 70px;
-        width: 70px;
-        object-fit: cover;
-    }
-    .marked-Q1 {
-        justify-content: space-between;
-        
-    }
+    
 
 
-    .marked {
-        justify-content: center;
-        
-    }
+ 
 
 
 }
 
 
 @media only screen and (max-width:700px){
-
     .marked {
         justify-content: space-between;
 
@@ -387,12 +417,22 @@ footer {
         display: none;
     }
 
-    
 
-   
+
+
+    .populære-merkerQ1 {
+        display: none;
+    }
+
+    #popQ1 {
+        display: none;
+    }
+
+    #popQ2 {
+        display: none;
+    }
 
 }
 
-@media only screen and (max-width:1000px){
-
+    
 
