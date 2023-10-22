@@ -562,7 +562,7 @@ section.kjøp {
     position: fixed;
     box-sizing: border-box;
     width: 100%;
-    padding: 0.5rem;
+    padding: 0.3rem;
     background-color: #ffffff;
     
     
@@ -580,9 +580,17 @@ section.kjøp {
 
 }
 
+footer p {
+    display: flex;
+    padding-top: 0px;
+    font-size: 12px;
+    padding-bottom: 30px;
+}
+
+
 .textV {
     margin: 1rem;
-    font-size: 15px;
+    font-size: 4vw;
     text-align: left;
     background-color: #DCD6F7;
     padding: 0.5rem;
@@ -591,17 +599,17 @@ section.kjøp {
 }
 
 .textV h2{
-    font-size: 15px;
+    font-size: 4vw;
 }
 
 .textH h2{
-    font-size: 15px;
+    font-size: 4vw;
 }
 
 .textH {
     padding: 0.5rem;
     margin: 1rem;
-    font-size: 15px;
+    font-size: 4vw;
     text-align: right;
     background-color: #F4EEFF;
     width: fit-content;
@@ -807,7 +815,7 @@ section#produktback {
 }
 
 
-@media only screen and (min-width:1700px){
+@media only screen and (min-width:1000px){
 
     .fa-address-card {
         display: flex;
@@ -829,6 +837,7 @@ section#produktback {
         font-size: 20px;
         flex-direction: row;
         padding-bottom: 15px;
+        padding-top: 15px;
     }
 
     #VennerDesk {
@@ -846,10 +855,11 @@ section#produktback {
 
     #søkchat2 {
         display: flex;
-        justify-content: right;
-        text-align: right;
+        justify-content: center;
+        text-align: center;
         box-sizing: border-box;
         padding: 0.5rem;
+        
         
         
         
@@ -860,7 +870,7 @@ section#produktback {
 
     #søkchat2 input {
         background-color: #DCD6F7;
-        width: 70%;
+        width: 100%;
         border: none;
         box-shadow: 2px 0px 4px rgba(0, 0, 0, 0.5);
         padding: 0.5rem;
@@ -872,7 +882,7 @@ section#produktback {
         display: flex;
         flex-direction: column;
         margin: 1rem;
-        font-size: 25px;
+        font-size: 21px;
         text-align: left;
         background-color: #DCD6F7;
         padding: 0.5rem;
@@ -881,17 +891,17 @@ section#produktback {
     }
     
     .textV h2{
-        font-size: 25px;
+        font-size: 23px;
     }
     
     .textH h2{
-        font-size: 25px;
+        font-size: 23px;
     }
     
     .textH {
         padding: 0.5rem;
         margin: 1rem;
-        font-size: 25px;
+        font-size: 21px;
         text-align: right;
         background-color: #F4EEFF;
         width: fit-content;
@@ -928,20 +938,17 @@ section#produktback {
     }
     .VennerSidenDesk section {
         margin-bottom: 10px;
-        border-style: solid;
+        border: 0.5px solid #333;
         background-color: #A6B1E1;
         padding: 0.1rem;
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         
     }
 
-    .VennerSidenDesk p {
-        font-size: 25px;
+    .VennerSidenDesk section p {
+        font-size: 21px;
     }
 
-    .VennerSidenDesk {
-
-
-    }
 
 
     .chatmenydesk{
@@ -959,13 +966,13 @@ section#produktback {
         flex-direction: column;
     }
 
-    .ulest {
+    section.ulest {
         background-color: #dddddd;
     }
 
 }
 
-@media only screen and (max-width:1700px){
+@media only screen and (max-width:1000px){
     .fa-id-badge {
         display: none;
     }
